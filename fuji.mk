@@ -112,10 +112,6 @@ PRODUCT_PACKAGES += \
     libaudioutils
     #audio_policy.conf
 
-# Camera wrapper
-#PRODUCT_PACKAGES += \
-#    camera.fuji
-
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8660 \
@@ -243,13 +239,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1 \
     persist.service.adb.enable=1 \
     persist.sys.usb.config=mtp,adb
-
-#### Goo Manager support
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.developerid=RaymanFX \
-    ro.goo.board=$(subst full_,,$(TARGET_PRODUCT)) \
-    ro.goo.rom=opensemc_cm \
-    ro.goo.version=$(shell date +%s)
 
 # QCOM
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -121,7 +121,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_PROVIDES_LIBLIGHTS := true
 
 # CM Hardware Class
-BOARD_HARDWARE_CLASS := hardware/sony/fuji-common/cmhw
+BOARD_HARDWARE_CLASS := device/sony/fuji-common/cmhw
 
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true

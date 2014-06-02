@@ -31,6 +31,9 @@ on init
     export EXTERNAL_STORAGE /storage/sdcard0
     export SECONDARY_STORAGE /storage/sdcard1
 
+    # Clear splash screen
+    write /sys/class/graphics/fb0/blank 1
+
 on fs
     mount_all /fstab.semc
 
